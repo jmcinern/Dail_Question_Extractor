@@ -55,3 +55,4 @@ with open("irish_non_questions.txt", "w", encoding="utf-8") as f:
 
 with open("english_non_questions.txt", "w", encoding="utf-8") as f:
     for sentence in english_non_questions:
+        f.write(sentence + "\n")
