@@ -12,6 +12,13 @@ dail_file_path = "/users/40460549/sharedscratch/questions_dail_ext/Dail_Question
 with open(dail_file_path, "r", encoding="utf-8") as f:
     sentences = [line.strip() for line in f if line.strip()]
 
+# get questions, utternces marked with a question mark
+not_questions = []
+for sentence in sentences:
+    if sentence[-1] != "?" and len(sentence) > 100:
+        not_questions.append(sentence)
+
+
 
 def get_anthropic_api_key():
     """Get Anthropic API key from environment or secrets file"""
