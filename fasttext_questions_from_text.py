@@ -3,7 +3,7 @@ import fasttext
 import os
 
 # Path to your Dáil text filea
-dail_file_path = "/users/40460549/sharedscratch/cpt-dail/datadail.txt"
+dail_file_path = "/users/40460549/sharedscratch/cpt-dail/data/dail.txt"
 
 with open(dail_file_path, "r", encoding="utf-8") as f:
     dail_text = f.read()
