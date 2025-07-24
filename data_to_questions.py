@@ -72,7 +72,7 @@ few_shot_prompt = FewShotChatMessagePromptTemplate(
 )
 
 # Load system message
-with open("./system_message.txt", "r", encoding="utf-8") as f:
+with open("./system.txt", "r", encoding="utf-8") as f:
     system_message = f.read()
 
 # Create the full prompt template
