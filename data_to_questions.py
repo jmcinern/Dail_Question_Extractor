@@ -62,7 +62,7 @@ with open("./examples.json", "r", encoding="utf-8") as f:
 
 # Create example prompt template
 example_prompt = ChatPromptTemplate.from_messages(
-    [("human", "Question: {question}"), ("assistant", "{answers}")]
+    [("human", "statement: {statement}"), ("assistant", "{question}")],
 )
 
 # Create few-shot prompt with examples
