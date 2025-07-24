@@ -7,7 +7,7 @@ from langchain_anthropic import ChatAnthropic
 # tkn by sentences
 # identify questions
 
-dail_file_path = "C:/Users/josep/VS-code-projects/CPT-Dáil/data/irish_non_questions.txt"
+dail_file_path = "/users/40460549/sharedscratch/questions_dail_ext/Dail_Question_Extractor/irish_non_questions.txt"
 
 with open(dail_file_path, "r", encoding="utf-8") as f:
     dail_text = f.read()
