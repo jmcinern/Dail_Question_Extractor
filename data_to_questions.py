@@ -88,7 +88,7 @@ for A in tqdm(not_questions[:5], desc="Generating responses"):
         continue
 
 # Save to file
-output_path = "C:/Users/josep/VS-code-projects/DPO_Synth/outputs/questinos_synth.json"
+output_path = "./outputs/questions_synth.json"
 os.makedirs(os.path.dirname(output_path), exist_ok=True)  # Create directory if it doesn't exist
 
 with open(output_path, "w", encoding="utf-8") as f:
