@@ -1,15 +1,12 @@
 from tqdm import tqdm
-import pandas as pd
-import re
-# read file
-# tkn by sentences
-# identify questions
+import fasttext
+import os
 
-dail_file_path = "C:/Users/josep/VS-code-projects/CPT-Dáil/data/dail.txt"
+# Path to your Dáil text filea
+dail_file_path = "/users/40460549/sharedscratch/cpt-dail/datadail.txt"
 
 with open(dail_file_path, "r", encoding="utf-8") as f:
     dail_text = f.read()
-
 
 def get_utterences(text):
     utterences = text.split("<|endoftext|>")
@@ -17,44 +14,41 @@ def get_utterences(text):
 
 sentences = get_utterences(dail_text)
 
-# get questions, utternces marked with a question mark
-questions = []
-for sentence in sentences:
-    if sentence[-1] == "?":
-        questions.append(sentence)
+# Get questions, utterances marked with a question mark
+questions = [sentence for sentence in sentences if sentence and sentence[-1] == "?"]
 
 print("Proportion of questions in the text:", len(questions) / len(sentences))
 print(len(questions), "questions found in the text.")
-# Identfy whether in Irish or English
+
+# Load fastText language identification model
+FASTTEXT_MODEL_PATH = "lid.176.bin"
+if not os.path.exists(FASTTEXT_MODEL_PATH):
+    import urllib.request
+    print("Downloading fastText language ID model...")
+    url = "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin"
+    urllib.request.urlretrieve(url, FASTTEXT_MODEL_PATH)
+
+ft_model = fasttext.load_model(FASTTEXT_MODEL_PATH)
+
 irish_questions = []
 english_questions = []
 
-words_by_freq_tsv_path = "C:/Users/josep/Downloads/cng-lem.tsv/cng-lem.tsv" 
-words_freq_df = pd.read_csv(words_by_freq_tsv_path, sep="\t", header=None)
-top_200_words_ga = words_freq_df.iloc[:200, 0].tolist()
+def detect_language(text):
+    prediction = ft_model.predict(text.replace('\n', ' '), k=1)
+    lang = prediction[0][0].replace("__label__", "")
+    return lang
 
-# print(top_200_words_ga), remove: ['an', 'a', 'is', 'as', 'do', 'go', 'sin', 'am', 'eh']
-
-# remove overlapping en/ga words
-top_200_words_ga = [word for word in top_200_words_ga if word not in ["an", "a", "is", "as", "do", "go", "sin", "am", "eh"]]
-
-
-def is_Irish(text, top_200_word_gas):
-    for kw_ga in top_200_words_ga:
-        # Match whole word only
-        if re.search(r'\b' + re.escape(kw_ga) + r'\b', text) and "the " not in text:
-            return True
-    return False
-
-for question in tqdm(questions):
-    if is_Irish(question, top_200_words_ga):
+for question in tqdm(questions, desc="Detecting language"):
+    lang = detect_language(question)
+    if lang == "ga":
         irish_questions.append(question)
-    else:
+    elif lang == "en":
         english_questions.append(question)
+    # else: ignore other languages
 
 print(f"Found {len(irish_questions)} Irish questions and {len(english_questions)} English questions.")
 
-# save question lists to files, separating with new line
+# Save question lists to files, separating with new line
 with open("irish_questions.txt", "w", encoding="utf-8") as f:
     for question in irish_questions:
         f.write(question + "\n")
@@ -62,7 +56,3 @@ with open("irish_questions.txt", "w", encoding="utf-8") as f:
 with open("english_questions.txt", "w", encoding="utf-8") as f:
     for question in english_questions:
         f.write(question + "\n")
-
-
-
-
