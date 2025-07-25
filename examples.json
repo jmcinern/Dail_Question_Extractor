@@ -1,18 +1,22 @@
 [
-  {
-    "statement": "Tá an Rialtas tiomanta d'athbhreithniú cuimsitheach a dhéanamh ar Acht na dTeangacha Oifigiúla. Tá an pobal ag súil go mór leis an athbhreithniú seo chun feabhas a chur ar stádas na Gaeilge agus ar sholáthar seirbhísí trí mheán na Gaeilge. Tá sé ríthábhachtach go mbeadh soiléireacht ann maidir leis an amchlár don reachtaíocht seo.",
-    "question": "Mar is eol don Tánaiste, tá gealltanas i gclár reachtaíochta an Rialtais go ndéanfar athbhreithniú ar Acht na dTeangacha Oifigiúla. An bhféadfadh an Tánaiste a cur in iúl dúinn cén uair an bhfuil sí ag súil go mbeidh an Bille sin á fhoilsiú?"
-  },
-  {
-    "statement": "Tá imní mhór ar phobal na n-oileán maidir le todhchaí na seirbhísí aeir. Inné, níor tháinig Comhairle Contae na Gaillimhe ar chomhaontú soiléir faoi Aerfort an Chairn Mhóir. Cé go bhfuil Aer Arann ag réiteach seirbhís ó Aerfort na Minne, tá moladh an Aire Stáit maidir le seirbhís héileacaptair ó mhí Dheireadh Fómhair ag cur isteach go mór ar mhuintir na n-oileán. Tá sé ríthábhachtach go mbeadh leanúnachas sa tseirbhís reatha agus soiléireacht faoi na pleananna fadtéarmacha.",
-    "question": "Bhí cruinniú ag Comhairle Contae na Gaillimhe inné agus níl socrú ann go mbeidh Aerfort an Chairn Mhóir ar fáil d'aon chomhlacht faoi láthair. Caithfidh an tAire Stáit a bheith soiléir faoi seo. Tá an tseirbhís aeir laethúil ann ó Aerfort na Minne á réiteach ag Aer Arann. Dúirt an tAire Stáit go mbeidh seirbhís nua ann ó mhí Dheireadh Fómhair ach gur seirbhís héileacaptair a bheidh ann ag eitilt ó Aerfort an Chairn Mhóir ar an taobh thoir de chathair na Gaillimhe. Sin iad na rudaí a chuireann imní ar mhuintir na n-oileán. D'iarr an tAire Stáit ar Aer Arann leanacht leis an tseirbhís go dtí deireadh mhí Feabhra. An bhfuil an tAire Stáit in ann a rá inniu go leanfar leis an tseirbhís ag Aer Arann go dtí mí Feabhra? Cén uair a bheidh cinneadh ar an gceist seo? Ní dóigh liom gur thug an tAire Stáit freagra dom ar an gceist a chuir mé air. An mbeidh an tseirbhís aeir ann tar éis cúpla mí eile? An mbeidh sé ann tar éis mí Dheireadh Fómhair?"
-  },
-  {
-    "statement": "Tá sé ríthábhachtach go gcuirfí próiseas tairisceana nua ar bun go tapa le haghaidh seirbhís aeir go dtí Oileáin Árann, agus go mbeadh an próiseas sin trédhearcach agus go gcuirfeadh sé san áireamh riachtanais an phobail. Ní mór a chinntiú go mbeidh an tseirbhís inmharthana agus oiriúnach do na hoileáin, agus go mbeidh rannpháirtíocht shuntasach ag ionadaithe an phobail sa phróiseas cinnteoireachta.",
-    "question": "An dtabharfaidh an tAire soiléiriú maidir leis na céimeanna atá á nglacadh ag a Roinn chun próiseas nua tairisceana a chur ar fáil maidir le seirbhís aeir go dtí Oileáin Árann? Cén rannpháirtíocht a bheidh ag an bpobal sa phróiseas nua seo? An ndeimhneoidh sí gur seirbhís eitleán sciatháin dhobhogtha a bheidh ann agus gurb as Aerfort Chonamara a bheidh an tseirbhís á cur ar fáil?"
-  },
-  {
-    "statement": "Cé go bhfuil an tAire Stáit tar éis forbhreathnú stairiúil a thabhairt ar an gceist, tá sé ríthábhachtach anois díriú ar na chéad chéimeanna eile maidir leis an gConradh Oibleagáide Seirbhíse Poiblí (PSO) don tseirbhís aeir. Tá imní ar an bpobal faoi na critéir nua agus faoin bpróiseas meastóireachta, chomh maith leis an amchlár don tairiscint. Ní mór a chinntiú go gcosnófar leasanna phobal na n-oileán sa phróiseas seo.",
-    "question": "Gabhaim mo bhuíochas leis an Aire Stáit. Is é an rud atá déanta ag an Aire Stáit ná stair na ceiste seo a chur os comhair an Tí. Tá eolas maith againn ar an stair. Tá scata ceist faoi leith agamsa. An bhfuil an próiseas úr tosaithe ó thaobh an PSO fá choinne na ceithre bliana amach anseo? An bhfuil an Oifig um Sholáthar Rialtais ag plé leis an gceist seo arís? Má tá, an bhfuil critéir nua leagtha amach fá choinne an PSO ar feadh na ceithre bliana sin? An féidir leis an Aire Stáit iad san a fhoilsiú? An gcinnteoidh na critéir seo gur seirbhís as Aerfort Chonamara a bheidh ann san tairiscint úr? An seirbhís eitleán sciatháin dhobhogtha a bheidh ann? An mbeidh ionadaithe ar son phobal na n-oileán ar an bpainéal measúnaithe? Cén scála ama a bheidh ann agus tairiscint á déanamh agus deireadh leis an bpróiseas seo?"
-  }
+    {
+      "statement": "Tá an-obair déanta ag an Rialtas maidir le cearta na n-oibrithe, ach táim buartha fós faoin sprioc airgid a shábháil seachas cearta na n-oibrithe a chur chun tosaigh. Ba cheart go mbeadh slí níos éasca agus níos dírí ar fáil do ghnáthoibrithe na tíre chun a gcuid cearta a bhaint amach. Tá súil agam go ndéanfaidh an Rialtas gach píosa oibre atá fós le déanamh chun go mbeidh na cearta sin lárnach sa chóras nua.",
+      "question": "Cad iad na cearta atá ag oibrithe in Éirinn agus conas is féidir liom gearán a dhéanamh má tá fadhb agam le mo fhostóir?"
+    },
+    {
+      "statement": "Is deacracht mhór é go bhfuil ach 1,000 dalta ag labhairt Gaeilge mar ghnáth-theanga sna Gaeltachtaí faoi láthair. Tá brú mór ann ó imirce agus ó straitéis oideachais trí Bhéarla sna scoileanna Gaeltachta. Caithfimid níos mó infheistíochta a dhéanamh chun an Ghaeilge a choiméad beo agus a láidriú sna ceantair sin.",
+      "question": "Cén fáth a bhfuil an Ghaeilge ag dul in éag sna Gaeltachtaí agus cad atá á dhéanamh ag an Rialtas faoi?"
+    },
+    {
+      "statement": "Tá na rátaí úis ar mhorgáistí sa tír seo 1.5% go 2% níos airde ná mar atá siad i Sasana nó san Aontas Eorpach. Ciallaíonn sé sin go bhfuil daoine ag íoc beagnach €2,000 sa bhliain níos mó ná mar ba cheart dóibh. Is fadhb mhór í seo do ghnáthphobal na tíre agus caithfidh an Rialtas gníomhú in éadan na mbanc.",
+      "question": "Cén fáth atá morgáistí chomh daor sin in Éirinn i gcomparáid le tíortha eile agus an féidir liom rud ar bith a dhéanamh faoi mo ráta úis féin?"
+    },
+    {
+      "statement": "Tá fadhb uafásach ann le morgáistí IBRC - fágadh na daoine sin amuigh san fhuacht gan aon chabháir, fad is a fuair gnóthaí móra mar Siteserv agus Denis O'Brien gach cabhair. Duine as seisear i mo chontae féin atá i bponc mar gheall ar a mhorgáiste. Caithfidh an Rialtas gach duine a chur ar an leibhéal céanna.",
+      "question": "Má tá mo mhorgáiste IBRC i dtrioblóid, cad iad na roghanna atá agam agus cén cabhair atá ar fáil ón Stát?"
+    },
+    {
+      "statement": "Molann mé go gcuirfear an Bille um Chomhionannas Fostaíochta ar aghaidh chuig an Roghchoiste um Dhlí agus Ceart, Cosaint agus Comhionannas. Tá sé tábhachtach go mbeadh comhionannas fostaíochta lárnach i ngach dlí nua a dhéanaimid sa tír seo agus go gcinnteoimid go bhfuil cosaint ag gach oibrí.",
+      "question": "Cad atá sa Bhille um Chomhionannas Fostaíochta agus conas a rachadh sé i bhfeidhm orm mar oibrí?"
+    }
 ]
